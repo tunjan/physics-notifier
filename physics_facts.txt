@@ -1,0 +1,49 @@
+The speed of light in a vacuum is exactly \(2.998 x 10^8\) meters per second.
+Heisenberg's Uncertainty Principle states it's impossible to know both the exact position and momentum of a particle.
+Energy cannot be created or destroyed, only transformed, according to the First Law of Thermodynamics.
+Einstein's theory of General Relativity redefined gravity as a curvature of spacetime caused by mass.
+Neutrinos are nearly massless particles that rarely interact with matter.
+The Doppler effect explains why a siren sounds different as it approaches and then passes by.
+Quantum entanglement allows particles to instantly affect each other regardless of distance.
+Superconductors are materials that have zero electrical resistance at very low temperatures.
+A single solar flare can release the equivalent energy of millions of nuclear bombs.
+The Milky Way galaxy is estimated to be about 100,000 light-years in diameter.
+The Planck length is the smallest measurable length, roughly \(1.616 \times 10^{-35}\) meters.
+The strong nuclear force is the strongest of the four fundamental forces but acts only at very short distances.
+Fermions are particles that obey the Pauli exclusion principle.
+Bosons are particles that can exist in the same state and place in the same time.
+The concept of 'spin' in quantum mechanics does not actually refer to physical spinning.
+A photon is a massless particle that carries electromagnetic force.
+Quantum tunneling allows particles to pass through barriers that classical mechanics predicts should be impenetrable.
+Black holes emit Hawking radiation, a theoretical prediction by Stephen Hawking.
+Maxwell's equations describe how electric and magnetic fields are generated and propagate through space.
+A quasar is an extremely luminous active galactic nucleus, powered by a supermassive black hole.
+The CMBR (Cosmic Microwave Background Radiation) is considered the afterglow of the Big Bang.
+The equivalence principle states that locally (that is, in a small enough region of spacetime), it is impossible to distinguish between physical effects due to gravity and those due to acceleration.
+The concept of a field in physics describes the space in which a force is operative.
+String theory proposes that particles are actually one-dimensional "strings" rather than point-like particles.
+Brownian motion is the random movement of particles in a fluid, resulting from their collision with fast atoms or molecules.
+The weak nuclear force is responsible for the process of nuclear decay.
+Sound cannot travel through a vacuum because it needs a medium (like air, water, or a solid substance) to carry the sound waves.
+The law of conservation of momentum states that the total momentum of a closed system remains constant over time, provided that no external forces are acting upon it.
+The magnetic north and south poles on Earth are moving.
+Nuclear fission is the process by which the nucleus of an atom splits into two smaller nuclei, accompanied by a release of a large amount of energy.
+Nuclear fusion is the process by which two atomic nuclei come together to form a heavier nucleus, releasing a large amount of energy in the process.
+The term "Laser" stands for Light Amplification by Stimulated Emission of Radiation.
+Absolute zero is the lowest possible temperature where nothing could be colder and no heat energy remains in a substance.
+Gravity is the weakest of the four fundamental forces, yet it is the dominant force shaping the large-scale structure of the universe.
+Most of the ordinary matter in the universe is made up of protons and neutrons, which are composed of quarks.
+An electron has a negative electrical charge.
+An atom consists of a nucleus of protons and neutrons, around which electrons orbit.
+Gamma rays are a type of electromagnetic radiation, and they are the most energetic form of electromagnetic radiation.
+The first law of motion, also known as the law of inertia, states that an object at rest stays at rest and an object in motion stays in motion unless acted upon by an external force.
+The second law of motion states that force is equal to mass times acceleration (\( F = ma \)).
+The third law of motion states that for every action, there is an equal and opposite reaction.
+Entropy is a measure of the amount of disorder in a system.
+Time dilation is a consequence of Einstein's theory of general relativity and describes how time passes differently depending on the strength of the gravitational field.
+Ohm's law states that the current passing through a conductor between two points is directly proportional to the voltage across the two points.
+Hooke's law states that the force required to extend or compress a spring is directly proportional to the distance it is extended or compressed.
+Kepler's first law states that the orbit of every planet is an ellipse with the Sun at one of the two foci.
+Kepler's second law states that a line segment joining a planet and the Sun sweeps out equal areas during equal intervals of time.
+Kepler's third law states that the square of the orbital period of a planet is directly proportional to the cube of the semi-major axis of its orbit.
+
