@@ -44,10 +44,10 @@ pip install plyer schedule
     app_icon='icon_path.ico'
     ```
 
-5. **Run the Script**: Run `main_script.py` to start receiving notifications.
+5. **Run the Script**: Run `physics-notifier.py` to start receiving notifications.
 
     ```bash
-    python main_script.py
+    python physics-notifier.py
     ```
 
 6. **Stop the Script**: To stop receiving notifications, terminate the script by pressing `Ctrl+C` in the terminal.
