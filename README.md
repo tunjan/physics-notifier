@@ -2,27 +2,32 @@
 
 ## Overview
 
-This script sends you a notification containing an interesting physics fact every 15 minutes. The facts cover various areas in physics and range from fundamental principles to mind-boggling concepts.
+This script sends a desktop notification with an interesting physics fact at regular intervals. It can use either a local file or an online source for the facts.
 
 ## Prerequisites
 
 - Python 3.x
 - `plyer` package for notifications
-- `schedule` package for scheduling tasks
+- `schedule` package for task scheduling
+- `requests` package for fetching facts online
 
-Install the required Python packages using pip:
+You can install all the required packages by running:
 
 ```bash
-pip install plyer schedule
+pip install plyer schedule requests
 ```
 
-## Files Included
+## Configuration
 
-1. `main_script.py`: The main Python script that handles notifications.
-2. `physics_facts.txt`: Text file containing the physics facts.
-3. `icon_path.ico`: Icon file used for the notification. (Replace with your own icon file)
+The script is configured using a JSON file called `config.json`. The available settings are:
 
-## How to Use
+- `interval`: Time interval (in minutes) between notifications (default: 15).
+- `use_online_source`: Whether to fetch facts from an online source (default: true).
+- `online_source_url`: The URL to fetch the facts from if `use_online_source` is true.
+- `enable_logging`: Whether to enable logging (default: true).
+- `log_file`: The file to store logs.
+
+## Usage
 
 1. **Clone the Repository**: Clone this GitHub repository to your local machine.
 
@@ -30,45 +35,35 @@ pip install plyer schedule
     git clone <repository_url>
     ```
 
-2. **Install Dependencies**: Navigate to the cloned repository's folder and install the required packages.
+2. **Install Dependencies**: Navigate to the directory containing the cloned repository and install the required packages.
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3. **Add Physics Facts**: Make sure `physics_facts.txt` is present in the same directory as `main_script.py`.
+3. **Configure the Script**: Edit `config.json` to customize your settings, like notification interval, data source, etc.
 
-4. **Add Icon**: Place your desired `.ico` file in the directory and update its path in `main_script.py`.
-
-    ```python
-    app_icon='icon_path.ico'
-    ```
-
-5. **Run the Script**: Run `physics-notifier.py` to start receiving notifications.
+4. **Run the Script**: Execute the Python script to start receiving notifications.
 
     ```bash
     python physics-notifier.py
     ```
 
-6. **Stop the Script**: To stop receiving notifications, terminate the script by pressing `Ctrl+C` in the terminal.
+5. **Stop the Script**: To stop receiving notifications, press `Ctrl+C` in the terminal where the script is running.
 
 ## Customization
 
 - **Update Physics Facts**: You can add or remove facts in `physics_facts.txt`. Each fact should be on a new line.
-- **Change Notification Time**: The notification interval is set to 15 minutes by default. You can change it in `main_script.py`.
-
-    ```python
-    schedule.every(15).minutes.do(job)
-    ```
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE.md` for details.
+- **Change Configuration**: Edit `config.json` to adjust your settings.
 
 ## Author
 
-Tunjan/Persaeus
+Persaeus/Tunjan
+
+## License
+
+This project is under the MIT License. See `LICENSE` for more details.
 
 ## Contributing
 
-Feel free to fork the project and submit a pull request with your changes!
+Feel free to fork this repository and create a pull request if you have some improvements or features to add.
