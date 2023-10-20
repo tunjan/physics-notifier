@@ -1,44 +1,54 @@
 
+import json
+import requests
+import logging
 import schedule
 import random
 from plyer import notification
 
-# Data Management
-try:
-    with open('physics_facts.txt', 'r') as f:
-        physics_facts = f.readlines()
-except FileNotFoundError:
-    print("File not found. Exiting.")
-    exit()
+# Configuration
+def read_config():
+    with open("config.json", "r") as f:
+        config = json.load(f)
+    return config
 
-# Notification Function
-def send_notification(fact):
+config = read_config()
+interval = config.get('interval', 15)
+
+# Logging setup
+logging.basicConfig(filename='app.log', level=logging.INFO)
+
+# Fetching facts
+def fetch_online_facts(url):
     try:
-        notification.notify(
-            title='Interesting Physics Fact',
-            message=fact,
-            app_name='PhysicsFacts',
-            timeout=60,
-            app_icon='icon_path.ico'
-        )
-    except Exception as e:
-        print(f"An error occurred: {e}")
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text.splitlines()
+    except:
+        return None
 
-# Randomization Logic
-last_fact = ""
+def read_local_facts(file_path='physics_facts.txt'):
+    with open(file_path, 'r') as file:
+        return [line.strip() for line in file.readlines() if line.strip()]
 
-def job():
-    global last_fact
-    fact = random.choice(physics_facts)
-    while fact == last_fact:
-        fact = random.choice(physics_facts)
-    last_fact = fact
-    send_notification(fact)
+physics_facts = fetch_online_facts("https://some-url.com/facts") or read_local_facts()
+
+# Sending Notifications
+def send_notification(fact):
+    notification.notify(
+        title='Interesting Physics Fact',
+        message=fact,
+        app_name='PhysicsFacts',
+        timeout=10
+    )
 
 # Scheduling
-schedule.every(3).seconds.do(job)
+def job():
+    fact = random.choice(physics_facts)
+    send_notification(fact)
+    logging.info(f"Sent fact: {fact}")
 
-# Main Loop
+schedule.every(interval).seconds.do(job)
+
 while True:
     schedule.run_pending()
-
